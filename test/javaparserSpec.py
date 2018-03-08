@@ -1,8 +1,10 @@
 import unittest
+import sys
+sys.path.insert(0, '/Users/cloudlift/CodeLearner')
 from javaparser import get_tokens_for_field_declaration_and_processing_statements, identify_type_of_statement, parse_java_code_line, get_list_of_words_from_statement
 from global_reference import line_type_dict
 
-class JavaParserTest4_get_tokens_for_field_declaration_and_processing_statements(unittest.TestCase):
+class TestJavaParser4_get_tokens_for_field_declaration_and_processing_statements(unittest.TestCase):
 
     def test_spacetokenized1(self):
         input_remaining_words_list = ['url','=','"jdbc:mysql://localhost:3306/airline";']
