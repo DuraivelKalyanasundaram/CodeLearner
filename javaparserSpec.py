@@ -325,7 +325,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement7(self):
+    def test_processing_statement8(self):
         input_code_statement_list = ['a=','b+c;']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -334,7 +334,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement8(self):
+    def test_processing_statement9(self):
         input_code_statement_list = ['a=','b;']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -343,7 +343,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement9(self):
+    def test_processing_statement10(self):
         input_code_statement_list = ['a++;']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -352,7 +352,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement10(self):
+    def test_processing_statement11(self):
         input_code_statement_list = ['b--;']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -362,7 +362,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
 
-    def test_processing_statement11(self):
+    def test_processing_statement12(self):
         input_code_statement_list = ['a', '+=', '5;']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -371,7 +371,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {} \ninput is{}".format(actual_output, expected_output,input_code_statement_list))
 
-    def test_processing_statement12(self):
+    def test_processing_statement13(self):
         input_code_statement_list = ['a', '+=', '5',';']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -380,7 +380,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement13(self):
+    def test_processing_statement14(self):
         input_code_statement_list = ['a', '-=', '5',';']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -389,7 +389,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement14(self):
+    def test_processing_statement15(self):
         input_code_statement_list = ['a', '*=', '5',';']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -399,7 +399,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
 
-    def test_processing_statement15(self):
+    def test_processing_statement16(self):
         input_code_statement_list = ['a', '/=', '5',';']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -408,7 +408,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement16(self):
+    def test_processing_statement17(self):
         input_code_statement_list = ['a', '=', 'b','+','(c','/','d)',';']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -417,7 +417,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {} \nInput is{}".format(actual_output, expected_output, input_code_statement_list))
 
-    def test_processing_statement17(self):
+    def test_processing_statement18(self):
         input_code_statement_list = ['s', '=', '"Hello";']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -426,7 +426,7 @@ class JavaParserTest4_identify_type_of_statement(unittest.TestCase):
         "Did not get the expected output for method 'identify_type_of_statement' " \
         "\nActual output is {} \nExpected output is {}".format(actual_output, expected_output))
 
-    def test_processing_statement18(self):
+    def test_processing_statement19(self):
         input_code_statement_list = ['s', '=', '"Hello"',';']
         actual_output = identify_type_of_statement(input_code_statement_list)
         expected_output = line_type_dict.get(5)
@@ -475,7 +475,7 @@ class JavaParserTest4_parse_java_code_line(unittest.TestCase):
 
         self.assertFalse(actual_output_dict.get('unknown'))
 
-    def test_Processing_Statement2(self):
+    def test_Processing_Statement3(self):
         input_code_statement = 'private static final long serialVersionUID = 1L;'
         input_word_tokens = get_list_of_words_from_statement(input_code_statement)
         actual_output_dict = parse_java_code_line(input_word_tokens)
@@ -505,7 +505,7 @@ class JavaParserTest4_parse_java_code_line(unittest.TestCase):
         self.assertEqual(['static','final'], actual_output_dict.get('unknown'))
 
 
-    def test_Processing_Statement3(self):
+    def test_Processing_Statement4(self):
         input_code_statement = 'public CustomerFlightDetails()'
         input_word_tokens = get_list_of_words_from_statement(input_code_statement)
         actual_output_dict = parse_java_code_line(input_word_tokens)
@@ -530,7 +530,7 @@ class JavaParserTest4_parse_java_code_line(unittest.TestCase):
 
         self.assertFalse(actual_output_dict.get('unknown'))
 
-    def test_Processing_Statement4(self):
+    def test_Processing_Statement5(self):
         input_code_statement = 'super();'
         input_word_tokens = get_list_of_words_from_statement(input_code_statement)
         actual_output_dict = parse_java_code_line(input_word_tokens)
@@ -554,7 +554,7 @@ class JavaParserTest4_parse_java_code_line(unittest.TestCase):
 
         self.assertFalse(actual_output_dict.get('unknown'))
 
-    def test_Processing_Statement5(self):
+    def test_Processing_Statement6(self):
         input_code_statement = 'protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException'
         input_word_tokens = get_list_of_words_from_statement(input_code_statement)
         actual_output_dict = parse_java_code_line(input_word_tokens)

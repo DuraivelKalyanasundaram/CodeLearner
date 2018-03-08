@@ -3,3 +3,5 @@
 javalang
 __pycache__/
 *$py.class
+.coverage
+htmlcov
