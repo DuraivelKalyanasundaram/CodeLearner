@@ -1,6 +1,7 @@
 import unittest
 import sys
-sys.path.insert(0, '/Users/cloudlift/CodeLearner')
+import os
+sys.path.insert(0, os.getcwd())
 from javaparser import get_tokens_for_field_declaration_and_processing_statements, identify_type_of_statement, parse_java_code_line, get_list_of_words_from_statement
 from global_reference import line_type_dict
 
